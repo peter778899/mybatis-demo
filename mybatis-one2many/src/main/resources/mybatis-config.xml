@@ -4,6 +4,7 @@
 <configuration>
     <typeAliases>
         <typeAlias alias="User" type="com.tx.stu.models.User" />
+        <typeAlias alias="Post" type="com.tx.stu.models.Post"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">
@@ -16,4 +17,8 @@
             </dataSource>
         </environment>
     </environments>
+
+    <mappers>
+        <mapper resource="User.xml"/>
+    </mappers>
 </configuration>

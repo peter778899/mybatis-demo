@@ -5,7 +5,7 @@
 <mapper namespace="com.tx.stu.dao.IUser">
 
     <select id="getUser" parameterType="int"
-            resultType="com.tx.stu.models.User">
+            resultType="User">
         SELECT *
         FROM USER
         WHERE id = #{userId}
@@ -18,7 +18,7 @@
         VALUES(#{name}, #{dept}, #{website}, #{phone})
     </insert>
 
-    <select id="getUserList" resultType="com.tx.stu.models.User">
+    <select id="getUserList" resultType="User">
         SELECT * FROM USER
     </select>
 

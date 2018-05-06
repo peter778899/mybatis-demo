@@ -11,6 +11,9 @@
     <modules>
         <module>mybatis-start</module>
         <module>mybatis-curd</module>
+        <module>mybatis-xml-start</module>
+        <module>mybatis-one2many</module>
+        <module>mybatis-many2many</module>
     </modules>
 
     <dependencies>
